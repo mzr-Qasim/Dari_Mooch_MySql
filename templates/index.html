@@ -1,0 +1,251 @@
+{% load static %}
+{% include 'header/header.html' %}
+
+<main class="main-content">
+  <div class="main-hero-section">
+    <div class="row g-0">
+      <div class="col-12">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="false">
+          <!-- <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div> -->
+          <div class="carousel-inner">
+            {% for carousel in carousels %}
+              <div class="carousel-item active">
+                <img src="media/{{carousel.image}}" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>{{carousel.caption}}</h5>
+                  <p>{{carousel.description}}</p>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div><!-- /.col-12 -->
+    </div><!-- /.row -->
+  </div><!-- /.main-hero-section -->
+  <div class="ice-blast-card-section" style="background-color: #e2e3e7;">
+    <div class="Ice-blast-products" style="padding-top: 100px;">
+      <div class = "container">
+        <div class = "row my-5 g-0 Ice-Blast-Heading">
+            <h3 class = "text-center">Ice Blast</h3>
+        </div>
+        <div class = "row mx-auto owl-carousel-1 owl-carousel owl-theme">    
+          {% for product in products %}
+            {% if product.category == 'Ice Blast Section' %}
+              <div class = "col product-item mx-auto">
+                  <div class = "product-img">
+                      <img src ="media/{{product.image}}" alt = "" class = "img-fluid d-block mx-auto">
+                      {% if product.price_off %}
+                        <span class = "Save">Save {{product.price_off}}%</span>
+                      {% else %}
+                      <span class = "Save" style="display: none;"></span>
+                      {% endif %}
+                      <div class = "row btns w-100 mx-auto text-center">
+                          <button type = "button" class = "col-12 py-2">
+                              <i class = "fa fa-cart-plus"></i> Add to Cart
+                          </button>
+                      </div>
+                  </div>  
+                  <div class = "product-info p-3">
+                      <span class = "product-type"><h4>{{product.title}}</h4></span>
+                      <span class = "product-price">Rs.{{product.price}}</span>
+                      <div class = "rating d-flex mt-1">
+                          <span>
+                              <i class = "fa fa-star"></i>
+                          </span>
+                          <span>
+                              <i class = "fa fa-star"></i>
+                          </span>
+                          <span>
+                              <i class = "fa fa-star"></i>
+                          </span>
+                          <span>
+                              <i class = "fa fa-star"></i>
+                          </span>
+                          <span>
+                              <i class = "fa fa-star"></i>
+                          </span>
+                          <span><!-- /.review --></span>
+                      </div>
+                  </div>      
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div><!-- /.Ice-blast-products -->
+  </div><!-- /.ice-blast-card-section -->
+  <div class="Summer-Skin-Saviour-Card-Section" style="background-color: #e2e3e7;">
+    <div class="Summer-Skin-Saviour-products" style="padding-top: 50px;">
+      <div class = "container">
+        <div class = "row my-5 g-0 Summer-Skin-Saviour-Heading">
+            <h3 class = "text-center">Summer Skin Saviour</h3>
+        </div>
+        <div class = "row mx-auto owl-carousel-1 owl-carousel owl-theme">    
+          {% for product in products %}
+            {% if product.category == 'Summer-Skin-Saviour-Section' %}
+              <div class = "col product-item mx-auto">
+                  <div class = "product-img">
+                      <img src ="media/{{product.image}}" alt = "" class = "img-fluid d-block mx-auto">
+                      {% if product.price_off %}
+                        <span class = "Save">Save {{product.price_off}}%</span>
+                      {% else %}
+                        <span class = "Save" style="display: none;"></span>
+                      {% endif %}
+                      <div class = "row btns w-100 mx-auto text-center">
+                          <button type = "button" class = "col-12 py-2">
+                              <i class = "fa fa-cart-plus"></i> Add to Cart
+                          </button>
+                      </div>
+                  </div>  
+                  <div class = "product-info p-3">
+                      <span class = "product-type"><h4>{{product.title}}</h4></span>
+                      <span class = "product-price">Rs.{{product.price}}</span>
+                      <div class = "rating d-flex mt-1">
+                          <span>
+                              <i class = "fa fa-star"></i>
+                          </span>
+                          <span>
+                              <i class = "fa fa-star"></i>
+                          </span>
+                          <span>
+                              <i class = "fa fa-star"></i>
+                          </span>
+                          <span>
+                              <i class = "fa fa-star"></i>
+                          </span>
+                          <span>
+                              <i class = "fa fa-star"></i>
+                          </span>
+                          <span><!-- /.review --></span>
+                      </div>
+                  </div>      
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div><!-- /.Summer-Skin-Saviour-products -->
+  </div><!-- /.Summer-Skin-Saviour-Card-Section -->
+  <div class="World-Cup-Exclusive-Card-Section" style="background-color: #e2e3e7;">
+    <div class="World-Cup-Exclusive-products" style="padding-top: 50px; padding-bottom: 50px;">
+      <div class = "container">
+        <div class = "row my-5 g-0 World-Cup-Exclusive-Heading">
+            <h3 class = "text-center">World Cup Exclusive</h3>
+        </div>
+        <div class = "row mx-auto owl-carousel-1 owl-carousel owl-theme">    
+          {% for product in products %}
+            {% if product.category == 'World Cup Exclusive' %}
+              <div class = "col product-item mx-auto">
+                  <div class = "product-img">
+                      <img src ="media/{{product.image}}" alt = "" class = "img-fluid d-block mx-auto">
+                        {% if product.price_off %}
+                          <span class = "Save">Save {{product.price_off}}%</span>
+                        {% else %}
+                          <span class = "Save" style="display: none;"></span>
+                        {% endif %}
+                      <div class = "row btns w-100 mx-auto text-center">
+                          <button type = "button" class = "col-12 py-2">
+                              <i class = "fa fa-cart-plus"></i> Add to Cart
+                          </button>
+                      </div>
+                  </div>  
+                  <div class = "product-info p-3">
+                      <span class = "product-type"><h4>{{product.title}}</h4></span>
+                      <span class = "product-price">Rs.{{product.price}}</span>
+                      <div class = "rating d-flex mt-1">
+                          <span>
+                              <i class = "fa fa-star"></i>
+                          </span>
+                          <span>
+                              <i class = "fa fa-star"></i>
+                          </span>
+                          <span>
+                              <i class = "fa fa-star"></i>
+                          </span>
+                          <span>
+                              <i class = "fa fa-star"></i>
+                          </span>
+                          <span>
+                              <i class = "fa fa-star"></i>
+                          </span>
+                          <span><!-- /.review --></span>
+                      </div>
+                  </div>      
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div><!-- /.World-Cup-Exclusive-products -->
+  </div><!-- /.World-Cup-Exclusive-Card-Section -->
+  <div class="Central-image-section">
+    {% for img in Central_images %}
+      <img class="w-100" src="media/{{img.image}}" alt="">
+    {% endfor %}
+  </div><!-- /.Central-image-section -->
+  <div class="All-Items-Card-Section" style="background-color: #e2e3e7;">
+    <div class="All-Items-products" style="padding-top: 50px; padding-bottom: 50px;">
+      <div class = "container">
+        <div class = "row mx-auto owl-carousel-1 owl-carousel owl-theme">    
+          {% for product in products %}
+            {% if product.category == 'All Items' %}
+              <div class = "col product-item mx-auto">
+                  <div class = "product-img">
+                      <img src ="media/{{product.image}}" alt = "" class = "img-fluid d-block mx-auto">
+                        {% if product.price_off %}
+                          <span class = "Save">Save {{product.price_off}}%</span>
+                        {% else %}
+                          <span class = "Save" style="display: none;"></span>
+                        {% endif %}
+                      <div class = "row btns w-100 mx-auto text-center">
+                          <button type = "button" class = "col-12 py-2">
+                              <i class = "fa fa-cart-plus"></i> Add to Cart
+                          </button>
+                      </div>
+                  </div>  
+                  <div class = "product-info p-3">
+                      <span class = "product-type"><h4>{{product.title}}</h4></span>
+                      <span class = "product-price">Rs.{{product.price}}</span>
+                      <div class = "rating d-flex mt-1">
+                          <span>
+                              <i class = "fa fa-star"></i>
+                          </span>
+                          <span>
+                              <i class = "fa fa-star"></i>
+                          </span>
+                          <span>
+                              <i class = "fa fa-star"></i>
+                          </span>
+                          <span>
+                              <i class = "fa fa-star"></i>
+                          </span>
+                          <span>
+                              <i class = "fa fa-star"></i>
+                          </span>
+                          <span><!-- /.review --></span>
+                      </div>
+                  </div>      
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div><!-- /.All-Items-products -->
+  </div><!-- /.All-Items-Card-Section -->
+</main><!-- /.main-content -->
+{% include 'footer/footer.html' %}
+
+
+

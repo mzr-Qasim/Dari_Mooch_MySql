@@ -1,0 +1,446 @@
+
+
+*{
+margin: 0;
+padding: 0;
+
+}
+
+/**/
+
+
+
+
+header .top-navbar nav.navbar ul li a{
+    font-size: 20px;
+    color: var(--main-font-color);
+}
+
+
+header nav.main-nav-bar{
+    background-color: var(--main-header-color);
+}
+
+
+/* Search Bar */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Main Nav-bar */
+
+
+
+/* Carousel */
+
+
+/* Owl Carousel Configuration */
+
+/* Owl Carousel Nav Buttons Configuration */
+.owl-nav .owl-next, .owl-nav .owl-prev {
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+.owl-nav .owl-next {
+    right: 0;
+    display: flex;
+    margin-right: 2%;
+    font-size: 50px !important;
+}
+.owl-nav .owl-prev{
+    left: 0;
+    display: flex;
+    margin-left: 2%;
+    font-size: 50px !important;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ice-blast-card-section */
+
+/* ice-blast Heading */
+.Ice-Blast-Heading h3{
+    font-family: 'Font Name', sans-serif;
+    font-size: 30px;
+    display: inline-block;
+    position: relative;
+    text-align: center; /* Optional: Align text to center horizontally */
+    padding-bottom: 5px;
+}
+
+.Ice-Blast-Heading h3::after{
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%; /* Position the line at the horizontal center */
+    transform: translateX(-50%);
+    width: 3%; /* Adjust based on how wide you want the line */
+    height: 3px; /* Adjust based on how thick you want the line */
+    background-color: black; /* Adjust based on the color you want */
+
+}
+
+
+/* ice-blast Carousel Styling */
+.product-item{
+    border: none;
+}
+.product-img{
+    position: relative;
+    overflow: hidden;
+}
+.btns{
+    font-size: 15px;
+    font-weight: 300;
+
+}
+.btns button{
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+.btns button:hover{
+    color: #FFFFFF;
+    background-color: #000000;
+}
+.product-img:hover .btns{
+    bottom: 0;
+}
+
+.Save{
+    position: absolute;
+    width: 30%;
+    top: 16px;
+    right: 15px;
+    font-size: 15px;
+    color: white;
+    background-color: black;
+    text-align: center;
+
+}
+
+.product-type{
+    font-size: 13px;
+    opacity: 0.8;
+}
+.product-name{
+    transition: all 0.3s ease-in-out;
+}
+.product-name:hover{
+    color: #fcb941!important;
+}
+.product-price{
+    color: red;
+    font-size: 18px;
+    font-weight: normal;
+}
+.rating{
+    font-size: 13px;
+}
+.product-item{
+    width: 300px;
+}
+
+/**/
+
+
+
+
+
+/* Summer-Skin-Saviour-Card-Section */
+
+/* Summer-Skin-Saviour Heading */
+.Summer-Skin-Saviour-Card-Section .Summer-Skin-Saviour-Heading h3{
+    font-family: 'Font Name', sans-serif;
+    font-size: 30px;
+    display: inline-block;
+    position: relative;
+    text-align: center; /* Optional: Align text to center horizontally */
+    padding-bottom: 5px;
+}
+
+.Summer-Skin-Saviour-Card-Section .Summer-Skin-Saviour-Heading h3::after{
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%; /* Position the line at the horizontal center */
+    transform: translateX(-50%);
+    width: 3%; /* Adjust based on how wide you want the line */
+    height: 3px; /* Adjust based on how thick you want the line */
+    background-color: black; /* Adjust based on the color you want */
+
+}
+
+
+/* Summer-Skin-Saviour Carousel Styling */
+.Summer-Skin-Saviour-Card-Section .product-item{
+    border: none;
+}
+.Summer-Skin-Saviour-Card-Section .product-img{
+    position: relative;
+    overflow: hidden;
+}
+.Summer-Skin-Saviour-Card-Section .btns{
+    font-size: 15px;
+    font-weight: 300;
+
+}
+.Summer-Skin-Saviour-Card-Section .btns button{
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+.Summer-Skin-Saviour-Card-Section .btns button:hover{
+    color: #FFFFFF;
+    background-color: #000000;
+}
+.Summer-Skin-Saviour-Card-Section .product-img:hover .btns{
+    bottom: 0;
+}
+
+.Summer-Skin-Saviour-Card-Section .Save{
+    position: absolute;
+    width: 30%;
+    top: 16px;
+    right: 15px;
+    font-size: 15px;
+    color: white;
+    background-color: black;
+    text-align: center;
+
+}
+
+.Summer-Skin-Saviour-Card-Section .product-type{
+    font-size: 13px;
+    opacity: 0.8;
+}
+.Summer-Skin-Saviour-Card-Section .product-name{
+    transition: all 0.3s ease-in-out;
+}
+.Summer-Skin-Saviour-Card-Section .product-name:hover{
+    color: #fcb941!important;
+}
+.Summer-Skin-Saviour-Card-Section .product-price{
+    color: red;
+    font-size: 18px;
+    font-weight: normal;
+}
+.Summer-Skin-Saviour-Card-Section .rating{
+    font-size: 13px;
+}
+.Summer-Skin-Saviour-Card-Section .product-item{
+    width: 300px;
+}
+
+/**/
+/* World-Cup-Exclusive-Card-Section */
+
+/* World-Cup-Exclusive Heading */
+.World-Cup-Exclusive-Card-Section .World-Cup-Exclusive-Heading h3{
+    font-family: 'Font Name', sans-serif;
+    font-size: 30px;
+    display: inline-block;
+    position: relative;
+    text-align: center; /* Optional: Align text to center horizontally */
+    padding-bottom: 5px;
+}
+
+.World-Cup-Exclusive-Card-Section .World-Cup-Exclusive-Heading h3::after{
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%; /* Position the line at the horizontal center */
+    transform: translateX(-50%);
+    width: 3%; /* Adjust based on how wide you want the line */
+    height: 3px; /* Adjust based on how thick you want the line */
+    background-color: black; /* Adjust based on the color you want */
+
+}
+
+
+/* World-Cup-Exclusive Carousel Styling */
+.World-Cup-Exclusive-Card-Section .product-item{
+    border: none;
+}
+.World-Cup-Exclusive-Card-Section .product-img{
+    position: relative;
+    overflow: hidden;
+}
+.World-Cup-Exclusive-Card-Section .btns{
+    font-size: 15px;
+    font-weight: 300;
+
+}
+.World-Cup-Exclusive-Card-Section .btns button{
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+.World-Cup-Exclusive-Card-Section .btns button:hover{
+    color: #FFFFFF;
+    background-color: #000000;
+}
+.World-Cup-Exclusive-Card-Section .product-img:hover .btns{
+    bottom: 0;
+}
+
+.World-Cup-Exclusive-Card-Section .Save{
+    position: absolute;
+    width: 30%;
+    top: 16px;
+    right: 15px;
+    font-size: 15px;
+    color: white;
+    background-color: black;
+    text-align: center;
+
+}
+
+.World-Cup-Exclusive-Card-Section .product-type{
+    font-size: 13px;
+    opacity: 0.8;
+}
+.World-Cup-Exclusive-Card-Section .product-name{
+    transition: all 0.3s ease-in-out;
+}
+.World-Cup-Exclusive-Card-Section .product-name:hover{
+    color: #fcb941!important;
+}
+.World-Cup-Exclusive-Card-Section .product-price{
+    color: red;
+    font-size: 18px;
+    font-weight: normal;
+}
+.World-Cup-Exclusive-Card-Section .rating{
+    font-size: 13px;
+}
+.World-Cup-Exclusive-Card-Section .product-item{
+    width: 300px;
+}
+
+
+
+/**/
+/* All-Items-Card-Section */
+
+/* All-Items-Card Carousel Styling */
+
+.All-Items-Card-Section .product-item{
+    border: none;
+}
+.All-Items-Card-Section .product-img{
+    position: relative;
+    overflow: hidden;
+}
+.All-Items-Card-Section .btns{
+    font-size: 15px;
+    font-weight: 300;
+
+}
+.All-Items-Card-Section .btns button{
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+.All-Items-Card-Section .btns button:hover{
+    color: #FFFFFF;
+    background-color: #000000;
+}
+.All-Items-Card-Section .product-img:hover .btns{
+    bottom: 0;
+}
+
+.All-Items-Card-Section .Save{
+    position: absolute;
+    width: 30%;
+    top: 16px;
+    right: 15px;
+    font-size: 15px;
+    color: white;
+    background-color: black;
+    text-align: center;
+
+}
+
+.All-Items-Card-Section .product-type{
+    font-size: 13px;
+    opacity: 0.8;
+}
+.All-Items-Card-Section .product-name{
+    transition: all 0.3s ease-in-out;
+}
+.All-Items-Card-Section .product-name:hover{
+    color: #fcb941!important;
+}
+.All-Items-Card-Section .product-price{
+    color: red;
+    font-size: 18px;
+    font-weight: normal;
+}
+.All-Items-Card-Section .rating{
+    font-size: 13px;
+}
+.All-Items-Card-Section .product-item{
+    width: 300px;
+}
+
+
+
+
+
+
+
+/* Footer Section*/
+
+
+
+
+
+
+
+
+
+
+/* Login Page */
+
+
+

@@ -1,0 +1,99 @@
+{% load static %}
+{% include 'header/header.html' %}
+
+
+
+
+
+
+<main class="main-content">
+    <div class="container">
+
+        <div class="row" style="justify-content: center;">
+    
+          <div class="col-lg-8 col-lg-offset-2">
+    
+            <h1 style="display: flex; justify-content: center; margin: 40px 0;">Contact Us</h1>
+    
+            <p class="lead">Do you have any questions regarding your beard or do you need suggestions for products? Reach out to us at: support@darimooch.com or call us at +92 316 1115556. </p>
+    
+            <form id="contact-form" role="form">
+    
+            <div class="messages"></div>
+    
+            <div class="controls" style="margin: 60px 0;">
+    
+              <div class="row" >
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="form_name">First Name</label>
+                    <input id="form_name" type="text" name="firstname" class="form-control"required="required" data-error="Firstname is required.">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="form_lastname">Last Name</label>
+                    <input id="form_lastname" type="text" name="lastname" class="form-control" required="required" data-error="Lastname is required.">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row" style="margin-top: 20px;">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="form_email">Email</label>
+                    <input id="form_email" type="email" name="email" class="form-control" required="required" data-error="Valid email is required.">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="form_phone">Phone Number</label>
+                    <input id="form_phone" type="tel" name="phone" class="form-control">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row" style="margin-top: 20px;">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="form_message">Message</label>
+                    <textarea id="form_message" name="message" class="form-control" rows="8" required="required" data-error="Please,leave us a message."></textarea>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <input type="submit" class="btn btn-send" value="Send" style="width: 100%; margin-top: 30px; background-color: black; color: white; height: 70%;">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                </div>
+              </div>
+            </div>
+    
+            </form>
+    
+          </div>
+    
+        </div>
+    
+      </div>
+</main><!-- /.main-content -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% include 'footer/footer.html' %}
