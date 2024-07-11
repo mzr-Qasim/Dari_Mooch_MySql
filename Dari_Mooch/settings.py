@@ -84,6 +84,7 @@ DATABASES = {
         
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'dari_mooch_database',     # Replace with your MySQL database name
+        'DATABASE': 'dari_mooch_database',
         'USER': 'root',    # Replace with your MySQL username
         'PASSWORD': '',# Replace with your MySQL password
         'HOST': 'localhost',              # Or an IP Address that your MySQL is hosted on

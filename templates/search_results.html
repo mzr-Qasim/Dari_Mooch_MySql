@@ -1,0 +1,60 @@
+{% load static %}
+{% include 'header/header.html' %}
+
+
+<main class="main-content">
+    <div class="Ice-blast-products" style="padding-top: 100px;">
+        <div class = "container">
+          <div class = "row my-5 g-0 Ice-Blast-Heading">
+              <h3 class = "text-center">Search Results</h3>
+          </div>
+          <div class = "row mx-auto d-flex">    
+            {% for product in products %}
+                <div class = "col-3 product-item mx-auto" style="padding-bottom: 100px;">
+                    <div class = "product-img">
+                        <img src ="/media/{{product.image}}" alt = "" class = "img-fluid d-block mx-auto w-100">
+                        {% if product.price_off %}
+                          <span class = "Save">Save {{product.price_off}}%</span>
+                        {% else %}
+                        <span class = "Save" style="display: none;"></span>
+                        {% endif %}
+                        <div class = "row btns w-100 mx-auto text-center">
+                            <button type = "button" class = "col-12 py-2">
+                                <i class = "fa fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>  
+                    <div class = "product-info p-3">
+                        <span class = "product-type"><h4>{{product.title}}</h4></span>
+                        <span class = "product-price">Rs.{{product.price}}</span>
+                        <div class = "rating d-flex mt-1">
+                            <span>
+                                <i class = "fa fa-star"></i>
+                            </span>
+                            <span>
+                                <i class = "fa fa-star"></i>
+                            </span>
+                            <span>
+                                <i class = "fa fa-star"></i>
+                            </span>
+                            <span>
+                                <i class = "fa fa-star"></i>
+                            </span>
+                            <span>
+                                <i class = "fa fa-star"></i>
+                            </span>
+                            <span><!-- /.review --></span>
+                        </div>
+                    </div>      
+                </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div><!-- /.Ice-blast-products -->
+</main><!-- /.main-content -->
+
+
+
+
+
+{% include 'footer/footer.html' %}

@@ -39,3 +39,15 @@ def contactPage(request):
     contact = Contact_Us(firstname=Firstname, lastname=Lastname, email=Email, phone=Phone, message=Message)
     contact.save()
     return render(request, 'contact.html')
+
+
+
+
+def searchResults(request):
+
+    searchTerm = request.GET['search_results']
+    products = Products.objects.filter(title__icontains=searchTerm)
+    Data= {
+        "products": products
+    }
+    return render(request, 'search_results.html', Data)
